@@ -12,11 +12,7 @@ export default class WebGLView {
 		this.app = app;
 
 		this.samples = [
-			'images/sample-01.png',
-			'images/sample-02.png',
-			'images/sample-03.png',
-			'images/sample-04.png',
-			'images/sample-05.png',
+			'images/sample-01.jpg',
 		];
 
 		this.initThree();
@@ -36,9 +32,9 @@ export default class WebGLView {
 		this.camera.position.z = 300;
 
 		// renderer
-        this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+		this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
-        // clock
+		// clock
 		this.clock = new THREE.Clock(true);
 	}
 
